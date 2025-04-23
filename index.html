@@ -1,33 +1,53 @@
-<style>
-  .video-header {
-    position: relative;
-    height: 60vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SeaFish | Wild Frozen Salmon</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7fafa;
+      color: #333;
+      direction: ltr;
+    }
 
-  .video-header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    filter: brightness(0.6);
-  }
+    .video-header {
+      position: relative;
+      height: 60vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
 
-  .video-header h1 {
-    font-size: 3em;
-    text-shadow: 0 0 10px #000;
-  }
-</style>
+    .video-header video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      filter: brightness(0.6);
+    }
 
-<div class="video-header">
-  <video autoplay muted loop playsinline>
-    <source src="https://player.vimeo.com/progressive_redirect/playback/703785632/rendition/720p/file.mp4?loc=external&signature=b3a647f6244fa17b58c05a4d1c6a_
+    .video-header h1 {
+      font-size: 3em;
+      z-index: 2;
+      text-shadow: 0 0 10px #000;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat
