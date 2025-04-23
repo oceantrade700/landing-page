@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דגי ים - סלמון פרא קפוא</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background: #f0f4f7;
+            color: #333;
+            direction: rtl;
+        }
+        header {
+            background-color: #0a4d45;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h1 {
+            color: #0a4d45;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #0a4d45;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .order-btn {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #ff7e3c;
+            color: white;
+            font-weight: bold;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .lang-toggle {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .lang-toggle button {
+            margin: 0 5px;
+        }
+        .en {
+            display: none;
+            direction: ltr;
+        }
+    </style>
+    <script>
+        function switchLanguage(lang) {
+            document.querySelector('.he').style.display = lang === 'he' ? 'block' : 'none';
+            document.querySelector('.en').style.display = lang === 'en' ? 'block' : 'none';
+            document.body.dir = lang === 'he' ? 'rtl' : 'ltr';
+            document.documentElement.lang = lang;
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>🐟 דגי ים | SeaFish</h1>
+</header>
+
+<div class="lang-toggle">
+    <button onclick="switchLanguage('he')">עברית</button>
+    <button onclick="switchLanguage('en')">English</button>
+</div>
+
+<div class="container">
+
+    <!-- עברית -->
+    <div class="he">
+        <h1>סלמון פרא קפוא – טרי מהאוקיינוס עד הדלת</h1>
+        <img src="https://images.unsplash.com/photo-1619022350241-36b1f4ad95d2?auto=format&fit=crop&w=1400&q=80" alt="סלמון פראי באלסקה">
+        <p>
+            אנחנו בדגי ים מביאים אליך את הסלמון הכי איכותי – פראי, קפוא, מלא בטעם ובריאות.  
+            שיווק ישיר למסעדות, שפים ובתים פרטיים.
+        </p>
+        <p><strong>איכות. טריות. אמינות.</strong></p>
+
+        <a class="order-btn" href="https://wa.me/972501234567?text=שלום!%20אני%20מעוניין%20בהזמנת%20סלמון%20פרא%20קפוא." target="_blank">
+            📦 הזמן עכשיו בוואטסאפ
+        </a>
+
+        <form>
+            <label>שם מלא:</label>
+            <input type="text" placeholder="הכנס את שמך המלא" required>
+            <label>אימייל:</label>
+            <input type="email" placeholder="example@email.com" required>
+            <label>הודעה:</label>
+            <textarea rows="4" placeholder="מה תרצה לדעת או להזמין?"></textarea>
+            <button type="submit">שלח</button>
+        </form>
+    </div>
+
+    <!-- English -->
+    <div class="en">
+        <h1>Frozen Wild Salmon – From Ocean to Your Door</h1>
+        <img src="https://images.unsplash.com/photo-1619022350241-36b1f4ad95d2?auto=format&fit=crop&w=1400&q=80" alt="Wild Alaskan Salmon">
+        <p>
+            At SeaFish, we bring you top-quality wild frozen salmon – flavorful, fresh, and healthy.  
+            Direct supply to restaurants, chefs, and private homes.
+        </p>
+        <p><strong>Quality. Freshness. Trust.</strong></p>
+
+        <a class="order-btn" href="https://wa.me/972501234567?text=Hello!%20I'm%20interested%20in%20ordering%20wild%20frozen%20salmon." target="_blank">
+            📦 Order Now via WhatsApp
+        </a>
+
+        <form>
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+            <label>Email:</label>
+            <input type="email" placeholder="example@email.com" required>
+            <label>Message:</label>
+            <textarea rows="4" placeholder="What would you like to ask or order?"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
